@@ -1,7 +1,7 @@
 Summary: Prepares a system for an upgrade
 Name: preupgrade
 Version: 1.1.8
-Release: 1%{?dist}
+Release: 2%{?dist}
 License: GPLv2+
 Source: https://fedorahosted.org/releases/p/r/preupgrade/%{name}-%{version}.tar.bz2
 Source1: http://mirrors.fedoraproject.org/releases.txt
@@ -56,6 +56,9 @@ install -m 0644 %{SOURCE1} $RPM_BUILD_ROOT/usr/share/preupgrade/releases.list
 %{python_sitelib}/%{name}
 
 %changelog
+* Wed Feb 09 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.1.8-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
 * Thu Sep 09 2010 Richard Hughes <richard@hughsie.com> - 1.1.8-1
 - New upstream release.
 - Reinvigorate pre-upgrade-cli with the same fixes as the gui tool.
