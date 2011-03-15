@@ -1,7 +1,7 @@
 Summary: Prepares a system for an upgrade
 Name: preupgrade
-Version: 1.1.8
-Release: 2%{?dist}
+Version: 1.1.9
+Release: 1%{?dist}
 License: GPLv2+
 Source: https://fedorahosted.org/releases/p/r/preupgrade/%{name}-%{version}.tar.bz2
 Source1: http://mirrors.fedoraproject.org/releases.txt
@@ -45,7 +45,7 @@ install -m 0644 %{SOURCE1} $RPM_BUILD_ROOT/usr/share/preupgrade/releases.list
 %files -f %{name}.lang
 %defattr(-, root, root)
 %dir %{_datadir}/%{name}
-%doc ChangeLog README COPYING data/releases.txt
+%doc ChangeLog README COPYING
 %config(noreplace) %{_sysconfdir}/pam.d/*
 %config(noreplace) %{_sysconfdir}/security/console.apps/*
 %{_datadir}/%{name}/*
@@ -56,6 +56,9 @@ install -m 0644 %{SOURCE1} $RPM_BUILD_ROOT/usr/share/preupgrade/releases.list
 %{python_sitelib}/%{name}
 
 %changelog
+* Tue Mar 15 2011 Richard Hughes <richard@hughsie.com> - 1.1.9-1
+- New upstream release.
+
 * Wed Feb 09 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.1.8-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
 
