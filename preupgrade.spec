@@ -1,6 +1,6 @@
 Summary: Prepares a system for an upgrade
 Name: preupgrade
-Version: 1.1.9
+Version: 1.1.10
 Release: 1%{?dist}
 License: GPLv2+
 Source: https://fedorahosted.org/releases/p/r/preupgrade/%{name}-%{version}.tar.bz2
@@ -56,6 +56,11 @@ install -m 0644 %{SOURCE1} $RPM_BUILD_ROOT/usr/share/preupgrade/releases.list
 %{python_sitelib}/%{name}
 
 %changelog
+* Fri Oct 21 2011 Richard Hughes <richard@hughsie.com> - 1.1.10-1
+- New upstream release.
+- Recommend downloading the DVD if there is not enough space in /boot
+- Do not hardcode --location=none when upgrading to F16
+
 * Tue Mar 15 2011 Richard Hughes <richard@hughsie.com> - 1.1.9-1
 - New upstream release.
 
