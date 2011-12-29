@@ -14,7 +14,7 @@ Requires: python-urlgrabber >= 3.9.1-4
 Requires: yum-metadata-parser, yum >= 3.2.24
 Requires: usermode
 Requires: createrepo >= 0.9.7-7
-Requires: util-linux-ng >= 2.15.1
+Requires: util-linux >= 2.15.1
 BuildRequires: intltool
 BuildRequires: desktop-file-utils, python
 Conflicts: yaboot < 1.3.14-8
