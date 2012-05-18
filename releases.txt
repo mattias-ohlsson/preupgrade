@@ -27,13 +27,27 @@
 # One of (mirrorlist or baseurl) is required. If those trees do not contain
 # boot images (like Fedora 8's Everything tree) then an installurl or
 # installmirrorlist is required.
+#
+[Fedora 17 (Beefy Miracle)]
+stable=False
+preupgrade-ok=True
+version=17
+mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=fedora-17&arch=$basearch
+installmirrorlist=http://mirrors.fedoraproject.org/mirrorlist?path=pub/fedora/linux/development/17/$basearch/os/
+
+[Fedora 16 (Verne)]
+stable=True
+preupgrade-ok=True
+version=16
+mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=fedora-16&arch=$basearch
+installmirrorlist=http://mirrors.fedoraproject.org/mirrorlist?path=pub/fedora/linux/releases/16/Fedora/$basearch/os/
 
 [Fedora 15 (Lovelock)]
-stable=False
+stable=True
 preupgrade-ok=True
 version=15
 mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=fedora-15&arch=$basearch
-installmirrorlist=http://mirrors.fedoraproject.org/mirrorlist?path=pub/fedora/linux/development/15/$basearch/os/
+installmirrorlist=http://mirrors.fedoraproject.org/mirrorlist?path=pub/fedora/linux/releases/15/Fedora/$basearch/os/
 
 [Fedora 14 (Laughlin)]
 stable=True
@@ -48,7 +62,7 @@ preupgrade-ok=True
 version=13
 mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=fedora-13&arch=$basearch
 installmirrorlist=http://mirrors.fedoraproject.org/mirrorlist?path=pub/fedora/linux/releases/13/Fedora/$basearch/os
-#baseurl=http://download.fedora.redhat.com/pub/fedora/linux/development/13/$basearch/os
+eol-date=20110624
 
 [Fedora 12 (Constantine)]
 stable=True
