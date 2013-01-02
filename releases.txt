@@ -1,11 +1,11 @@
 # Example releases.list.
-# The official version is here: http://mirrors.fedoraproject.org/releases.txt
+# The official version is here: http://mirrors.ipredia.org/releases.txt
 #
-# This file contains a list of available Fedora releases.
+# This file contains a list of available IprediaOS releases.
 # Format is as follows:
 #
 #[Release Name] 
-#   - Header for this release. Typically: [Fedora X (Codename)]
+#   - Header for this release. Typically: [IprediaOS X (Codename)]
 #version=FLOAT 
 #   - Required. Version number for this release.
 #stable=BOOL 
@@ -28,74 +28,9 @@
 # boot images (like Fedora 8's Everything tree) then an installurl or
 # installmirrorlist is required.
 
-[Fedora 15 (Lovelock)]
+[IprediaOS 1 (Winston)]
 stable=False
-preupgrade-ok=True
-version=15
-mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=fedora-15&arch=$basearch
-installmirrorlist=http://mirrors.fedoraproject.org/mirrorlist?path=pub/fedora/linux/development/15/$basearch/os/
-
-[Fedora 14 (Laughlin)]
-stable=True
-preupgrade-ok=True
-version=14
-mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=fedora-14&arch=$basearch
-installmirrorlist=http://mirrors.fedoraproject.org/mirrorlist?path=pub/fedora/linux/releases/14/Fedora/$basearch/os
-
-[Fedora 13 (Goddard)]
-stable=True
-preupgrade-ok=True
-version=13
-mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=fedora-13&arch=$basearch
-installmirrorlist=http://mirrors.fedoraproject.org/mirrorlist?path=pub/fedora/linux/releases/13/Fedora/$basearch/os
-#baseurl=http://download.fedora.redhat.com/pub/fedora/linux/development/13/$basearch/os
-
-[Fedora 12 (Constantine)]
-stable=True
-preupgrade-ok=True
-version=12
-mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=fedora-12&arch=$basearch
-installmirrorlist=http://mirrors.fedoraproject.org/mirrorlist?path=pub/fedora/linux/releases/12/Fedora/$basearch/os
-eol-date=20101202
-
-[Fedora 11 (Leonidas)]
-stable=True
-preupgrade-ok=True
-version=11
-mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=fedora-11&arch=$basearch
-installmirrorlist=http://mirrors.fedoraproject.org/mirrorlist?path=pub/fedora/linux/releases/11/Fedora/$basearch/os
-eol-date=20100625
-
-[Fedora 10 (Cambridge)]
-stable=True
-preupgrade-ok=True
-version=10
-mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=fedora-10&arch=$basearch
-installmirrorlist=http://mirrors.fedoraproject.org/mirrorlist?path=pub/fedora/linux/releases/10/Fedora/$basearch/os
-eol-date=20091217
-
-# You can't reliably preupgrade to these.
-# They're only here so we know when they've gone EOL.
-
-[Fedora 9 (Sulphur)]
-stable=True
-version=9
-mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=fedora-9&arch=$basearch
-installmirrorlist=http://mirrors.fedoraproject.org/mirrorlist?path=pub/fedora/linux/releases/9/Fedora/$basearch/os
-eol-date=20090703
-
-[Fedora 8 (Werewolf)]
-stable=True
-version=8
-eol-date=20090107
-mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=fedora-8&arch=$basearch
-installmirrorlist=http://mirrors.fedoraproject.org/mirrorlist?path=pub/fedora/linux/releases/8/Fedora/$basearch/os
-
-[Fedora 7 (Moonshine)]
-stable=True
-version=7
-eol-date=20080613
-mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=fedora-7&arch=$basearch
-installmirrorlist=http://mirrors.fedoraproject.org/mirrorlist?path=pub/fedora/linux/releases/7/Fedora/$basearch/os
-
-# vim: syntax=dosini
+preupgrade-ok=False
+version=1
+mirrorlist=http://mirrors.ipredia.org/mirrorlist?repo=iprediaos-1&arch=$basearch
+installmirrorlist=http://mirrors.ipredia.org/mirrorlist?path=pub/iprediaos/linux/development/1/$basearch/os/
